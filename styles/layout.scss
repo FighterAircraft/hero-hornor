@@ -1,0 +1,30 @@
+.layout {
+  background: #fff;
+
+  .header {
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+    .left {
+      flex: 1;
+    }
+    .right {
+      width: 200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .layout {
+    padding: 10px;
+    width: 100%;
+  }
+  .mint-page {
+    width: 100%;
+
+    .form {
+      width: 500px;
+      margin: 0 auto;
+    }
+  }
+}
