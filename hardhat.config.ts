@@ -10,10 +10,5 @@ module.exports = {
          accounts: { mnemonic: mnemonic },
        },
      },
-    }
-
-const config: HardhatUserConfig = {
-  solidity: "0.8.9",
-};
-
-export default config;
+     solidity: "0.8.17"
+    };
