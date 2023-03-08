@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.9;
+pragma solidity ^0.8.1;
 
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
@@ -18,11 +18,6 @@ contract MyNFT is ERC721URIStorage,ERC721Enumerable {
      mapping(uint256 => Status) public tokenStatus;
 
      event SyncBlood(uint indexed tokenId,uint32 sheepBlood,uint32 sheepPower,uint32 wolfBlood,uint32 wolfPower,uint128 roleId);
-
-
-     struct META_ROLE{
-        string uri;
-     }
 
      struct Token{
         Status status;

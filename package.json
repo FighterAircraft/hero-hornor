@@ -12,7 +12,7 @@
     "node": "hardhat node",
     "arlocal": "npx arlocal",
     "deploy:lock": "hardhat run scripts/deploy.ts",
-    "deploy:myNFT": "hardhat run scripts/deployMyNFT.ts --network localhost",
+    "deployNFT": "hardhat run scripts/deployMyNFT.ts --network goerli",
     "sol": "prettier --write 'contracts/**/*.sol'"
   },
   "dependencies": {
