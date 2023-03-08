@@ -42,5 +42,3 @@ typechain-types
 # Hardhat files
 cache
 artifacts
-
-address.json
