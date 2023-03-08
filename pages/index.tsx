@@ -119,20 +119,20 @@ export default function Home() {
         </Space>
         <Space>
           <div>
-          <li>blood ： {sheep_blood}</li>
-          <li>power ： {sheep_power}</li>
-        <Image src= {path} height={500} 
-    width={500} alt="jpg" />
+          <h3>blood ： {sheep_blood}</h3>
+          <h3>power ： {sheep_power}</h3>
+        <Image src= {path} height={400} 
+    width={300} alt="jpg" />
       <h2>{sheep_blood !== 0 && wolf_blood === 0 ? 'WINNER':''}</h2>
     </div>
     <div>
       <h1>  VS   </h1>
       </div>
       <div>
-      <li>blood ： {wolf_blood}</li>
-      <li>power ： {wolf_power}</li>
-      <Image src="/wolf.jpg" height={500} 
-    width={500} alt="jpg" />
+      <h3>blood ： {wolf_blood}</h3>
+      <h3>power ： {wolf_power}</h3>
+      <Image src="/wolf.jpg" height={400} 
+    width={300} alt="jpg" />
      <h2>{sheep_blood === 0 && wolf_blood !== 0 ? 'WINNER':''}</h2>
     </div>
         </Space>
