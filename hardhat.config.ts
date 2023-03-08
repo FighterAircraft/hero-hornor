@@ -1,8 +1,14 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 
-const config: HardhatUserConfig = {
-  solidity: "0.8.17",
-};
+const { alchemyApiKey, mnemonic } = require('./secrets.json');
 
-export default config;
+module.exports = {
+      networks: {
+       goerli: {
+         url: `https://eth-goerli.alchemyapi.io/v2/${alchemyApiKey}`,
+         accounts: { mnemonic: mnemonic },
+       },
+     },
+     solidity: "0.8.17"
+    };

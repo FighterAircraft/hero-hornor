@@ -7,7 +7,7 @@ async function main() {
   const MyNFT = await ethers.getContractFactory("MyNFT");
   const withdrawer = await signer.getAddress();
   const myNFT = await MyNFT.deploy();
-  await myNFT.initial('lucky_sheep','lazy_sheep','beauty_sheep');
+  await myNFT.initial('/lucky_sheep.jpg','/lazy_sheep.jpg','/beauty_sheep.jpg');
 
   await myNFT.deployed();
 
